@@ -1,141 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipped By Amanda Jo - Custom Treats</title>
     <meta name="description" content="Dipped By Amanda Jo offers custom cake pops, cakesicles, dipped Rice Krispie treats, dipped pretzels, and chocolate-covered Oreos by the dozen. Perfect for parties, events, and gifts. Get a free quote today!">
     <meta name="keywords" content="Dipped By Amanda Jo, custom cake pops, cakesicles, dipped Rice Krispie treats, dipped pretzels, chocolate-covered Oreos, custom treats, party treats, event treats, gift treats, free quote">
     <meta name="author" content="Dipped By Amanda Jo">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-      }
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-      header {
-        background-color: #ff69b4;
-        color: white;
-        padding: 10px 0;
-        text-align: center;
-      }
-
-      header h1 {
-        margin-top: 0;
-      }
-
-      .container {
-        padding: 20px;
-      }
-
-      .form-container {
-        background-color: white;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        max-width: 600px;
-        margin: 20px auto;
-        width: 90%;
-      }
-
-      .form-container h2 {
-        margin-top: 0;
-      }
-
-      .services {
-        margin-top: 20px;
-      }
-
-      .services h2 {
-        text-align: center;
-        color: #ff69b4;
-      }
-
-      .services ul {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      .services ul li {
-        background: #ffe4e1;
-        margin: 10px 0;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: center;
-      }
-
-      .instagram-photos {
-        text-align: center;
-        margin: 20px 0;
-      }
-
-      .instagram-photos h2 {
-        color: #ff69b4;
-      }
-
-      .instagram-embed {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      .instagram-embed blockquote {
-        max-width: 100%;
-        flex: 1 1 300px;
-      }
-
-    </style>
-  </head>
-
-  <body>
+<body>
 
     <header>
-      <h1>Dipped By Amanda Jo</h1>
-      <p>Delicious custom treats by the dozen</p>
+        <h1>Dipped By Amanda Jo</h1>
+        <p>Delicious custom treats by the dozen</p>
+        <button class="tab-button" onclick="togglePricing()">Pricing and Packages</button>
     </header>
 
     <div class="container">
-      <div class="services">
-        <h2>Our Custom Treats</h2>
-        <ul>
-          <li>Cake Pops</li>
-          <li>Cakesicles</li>
-          <li>Chocolate Dipped Rice Krispie Treats</li>
-          <li>Chocolate Dipped Pretzel Rods</li>
-          <li>Chocolate-Covered Oreos</li>
-        </ul>
-        <h2>Available Cake Flavors</h2>
-        <ul>
-          <li>Vanilla</li>
-          <li>Strawberry</li>
-          <li>Chocolate</li>
-          <li>Birthday Cake</li>
-          <li>Chocolate Chip Cookie Dough</li>
-          <li>Red Velvet</li>
-          <li>Double Chocolate Chip</li>
-        </ul>
-      </div>
-
-      <div class="instagram-photos">
-        <h2>Let's get social!</h2>
-        <div class="instagram-embed">
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/dippedbyamandajo?igshid=MTV0eTVkc3BNWx6YQ==" data-instgrm-version="14"></blockquote>
+        <div class="services">
+            <h2>Our Custom Treats</h2>
+            <ul>
+                <li>Cake Pops</li>
+                <li>Cakesicles</li>
+								<li>Chocolate Covered Oreos</li>
+								<li>Chocolate Dipped Pretzel Rods</li>
+                <li>Chocolate Dipped Rice Krispie Treats</li>
+                
+            </ul>
+            <h2>Available Cake Flavors</h2>
+            <ul>
+                <li>Vanilla</li>
+								<li>Chocolate</li>
+                <li>Strawberry</li>
+                <li>Red Velvet</li>
+                <li>Birthday Cake</li>
+								<li>Double Chocolate Chip</li>
+                <li>Chocolate Chip Cookie Dough</li>
+            </ul>
         </div>
-        <p>Check out more of our creations on <a href="https://www.instagram.com/dippedbyamandajo?igshid=MTV0eTVkc3BNWx6YQ==" target="_blank">Instagram</a>.</p>
-        <script async src="//www.instagram.com/embed.js"></script>
-      </div>
 
-      <div class="form-container">
-        <h2>Indulge Your Sweet Tooth Below</h2>
-        <!-- Embed the Google Form iframe here -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLUVCZklPfxJxP6um1Cy9L7OZIZBHDmXcseYj0kQ0uQX4j4w/viewform?embedded=true" width="100%" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
+        <div class="instagram-photos">
+            <h2>Let's get social!</h2>
+            <div class="instagram-embed">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/dippedbyamandajo?igshid=MTV0eTVkc3BNWx6YQ==" data-instgrm-version="14"></blockquote>
+            </div>
+            <p>Check out more of our creations on <a href="https://www.instagram.com/dippedbyamandajo?igshid=MTV0eTVkc3BNWx6YQ==" target="_blank">Instagram</a>.</p>
+            <script async src="//www.instagram.com/embed.js"></script>
+        </div>
+
+        <div class="form-container">
+            <h2>Indulge Your Sweet Tooth Below</h2>
+            <form id="contactForm" name="clientContact" method="POST" data-netlify="true" onsubmit="sendMessage(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
     </div>
 
-  </body>
+    <div class="tab-content" id="pricingTab">
+        <h2>Pricing and Packages</h2>
+        <ul>
+            <li>Cake Pops - $20/dozen</li>
+            <li>Cakesicles - $25/dozen</li>
+						<li>Chocolate Covered Oreos - $18/dozen</li>
+						<li>Chocolate Dipped Pretzel Rods - $12/dozen</li>
+            <li>Chocolate Dipped Rice Krispie Treats - $15/dozen</li>
+        </ul>
+        <h2>Packages</h2>
+        <ul>
+            <li>Party Pack - $50 (4 dozen assorted treats)</li>
+            <li>Event Pack - $90 (8 dozen assorted treats)</li>
+            <li>Gift Pack - $25 (1 dozen of each treat)</li>
+        </ul>
+        <button class="close-button" onclick="togglePricing()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
 
 </html>
