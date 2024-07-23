@@ -1,30 +1,30 @@
 function togglePricing() {
-    var pricingTab = document.getElementById('pricingTab');
-    if (pricingTab.style.display === 'block') {
-        pricingTab.style.display = 'none';
-    } else {
-        pricingTab.style.display = 'block';
-    }
+  var pricingTab = document.getElementById("pricingTab");
+  if (pricingTab.style.display === "none" || pricingTab.style.display === "") {
+    pricingTab.style.display = "block";
+  } else {
+    pricingTab.style.display = "none";
+  }
 }
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+  const sprinkleContainer = document.getElementById('sprinkleContainer');
+  const colors = ['#FF69B4', '#FF4500', '#FFD700', '#ADFF2F', '#00BFFF', '#800080'];
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const message = document.getElementById('message').value;
+  function createSprinkle() {
+    const sprinkle = document.createElement('div');
+    sprinkle.classList.add('sprinkle');
+    sprinkle.style.left = Math.random() * 100 + 'vw';
+    sprinkle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    sprinkle.style.animationDuration = (Math.random() * 3 + 2) + 's'; // 2s to 5s
+    sprinkleContainer.appendChild(sprinkle);
 
-    const formData = new FormData(form);
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(formData).toString()
-				}).then(() => {
-						console.log('Form successfully submitted');
-				}).catch((error) => {
-						console.error('Error submitting form:', error);
-				});
+    // Remove sprinkle after it falls
+    setTimeout(() => {
+      sprinkle.remove();
+    }, 5000);
+  }
 
-    window.location.href = mailtoLink;
+  // Generate sprinkles at intervals
+  setInterval(createSprinkle, 300); // Adjust frequency here
 });
