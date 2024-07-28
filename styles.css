@@ -24,7 +24,6 @@ body {
   width: 10px;
   height: 10px;
   background-color: red;
-  /* Example color, you'll need multiple colors */
   border-radius: 50%;
   opacity: 0;
   animation: sprinkleFall 5s linear infinite;
@@ -113,7 +112,7 @@ header .tab-button:hover {
 }
 
 .services ul li {
-  background: #ffe4e1;
+  /*background: #ffe4e1;*/
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
