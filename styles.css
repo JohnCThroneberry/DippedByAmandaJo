@@ -82,7 +82,7 @@ header .logo {
 
 @media (max-width: 480px) {
     header .logo {
-        width: 200px; /* Adjust width for mobile screens */
+        width: 250px; /* Adjust width for mobile screens */
     }
 }
 
