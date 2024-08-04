@@ -76,13 +76,13 @@ header .logo {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     header .logo {
-        width: 120px; /* Adjust width for tablets and smaller screens */
+        width: 300px; /* Adjust width for tablets and smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     header .logo {
-        width: 100px; /* Adjust width for mobile screens */
+        width: 200px; /* Adjust width for mobile screens */
     }
 }
 
