@@ -65,6 +65,13 @@ header {
   text-align: center;
 }
 
+header .logo {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
 header h1 {
   margin-top: 0;
   font-family: 'Poppins', sans-serif;
