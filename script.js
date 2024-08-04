@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Remove sprinkle after it falls
     setTimeout(() => {
       sprinkle.remove();
-    }, 5000);
+    }, 10000);
   }
 
   // Generate sprinkles at intervals
-  setInterval(createSprinkle, 300); // Adjust frequency here
+  setInterval(createSprinkle, 100); // Adjust frequency here
 });
