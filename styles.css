@@ -73,6 +73,19 @@ header .logo {
     background-color: transparent;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header .logo {
+        width: 120px; /* Adjust width for tablets and smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        width: 100px; /* Adjust width for mobile screens */
+    }
+}
+
 header h1 {
   margin-top: 0;
   font-family: 'Poppins', sans-serif;
